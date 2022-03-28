@@ -137,6 +137,10 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
   color: #e1a34c;
 }
 
+.btn-about{
+  margin-bottom: 20px;
+}
+
 .btn-main-border:hover {
   border-color: #e1a34c;
   background: #e1a34c;
@@ -526,6 +530,7 @@ a:hover, a:focus {
   display: inline-block;
   height: 90px;
 }
+
 
 .slick-dots li button::before {
   color: #fff;
