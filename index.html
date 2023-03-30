@@ -541,7 +541,7 @@
 
 		<div class="row justify-content-center">
 			<div class="col-lg-8">
-					<form class="contact__form form-row contact-form" action="https://formsubmit.co/53e061d9afe522fcdc64a15fcf9e6752" method="POST" id="contactForm">
+					<form class="contact__form form-row contact-form" onsubmit="sendEmail();  reset(); return false"  id="contactForm">
 					 <div class="row">
                         <div class="col-12">
                             <div class="alert alert-success contact__msg" style="display: none" role="alert">
@@ -607,6 +607,23 @@
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <!-- Main jQuery -->
+	<script src=" https://smtpjs.com/v3/smtp.js"></script>
+	<script>
+		function sendEmail(){
+			Email.send({
+			Host : "smtp.elasticemail.com",
+			Username : "username",
+			Password : "password",
+			To : 'them@website.com',
+			From : "you@isp.com",
+			Subject : "This is the subject",
+			Body : "And this is the body"
+		}).then(
+		message => alert(message)
+		);
+
+		}
+	</script>
     <script src="plugins/jquery/jquery.min.js"></script>
     <!-- Bootstrap 4.3.1 -->
     <script src="plugins/bootstrap/js/popper.js"></script>
