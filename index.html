@@ -541,7 +541,8 @@
 
 		<div class="row justify-content-center">
 			<div class="col-lg-8">
-					<form class="contact__form form-row contact-form" onsubmit="sendEmail();  reset(); return false"  id="contactForm">
+					<form class="contact__form form-row contact-form"   action="https://formspree.io/f/mvonwkpv"
+					method="POST" id="contactForm">
 					 <div class="row">
                         <div class="col-12">
                             <div class="alert alert-success contact__msg" style="display: none" role="alert">
@@ -585,7 +586,7 @@
 				<ul class="list-inline footer-socials ">
 					
 				<li class="list-inline-item"><a href="https://www.facebook.com/profile.php?id=100074772432913"><i class="ti-facebook"></i></a></li>
-				<li class="list-inline-item"><a href="https://www.instagram.com/saidafzal0716"><i class="fa-brands fa-instagram"></i></a></li>
+				<li class="list-inline-item"><a href="https://www.instagram.com/abdusattorov_saidavzal"><i class="fa-brands fa-instagram"></i></a></li>
 				<li class="list-inline-item"><a href="https://www.linkedin.com/in/saidafzal-abdusattorov-127276229"><i class="fa-brands fa-linkedin-in"></i></a></li>
 				<li class="list-inline-item"><a href="https://telegram.me/SaidafzalAbdusattorov"><i class="fa-solid fa-paper-plane"></i></a></li>
 			    <li class="list-inline-item"><a href="https://github.com/saidafzal1607"><i class="fa-brands fa-github"></i></a></li>
@@ -607,23 +608,7 @@
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <!-- Main jQuery -->
-	<script src=" https://smtpjs.com/v3/smtp.js"></script>
-	<script>
-		function sendEmail(){
-			Email.send({
-			Host : "smtp.elasticemail.com",
-			Username : "username",
-			Password : "password",
-			To : 'them@website.com',
-			From : "you@isp.com",
-			Subject : "This is the subject",
-			Body : "And this is the body"
-		}).then(
-		message => alert(message)
-		);
 
-		}
-	</script>
     <script src="plugins/jquery/jquery.min.js"></script>
     <!-- Bootstrap 4.3.1 -->
     <script src="plugins/bootstrap/js/popper.js"></script>
